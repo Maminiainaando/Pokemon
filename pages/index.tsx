@@ -8,12 +8,12 @@ const Home = () => {
       <ul>
         <li>
           <Link href="/server">
-            <a>Server</a>
+            Server
           </Link>
         </li>
         <li>
           <Link href="/client">
-            <a>Client</a>
+            Client
           </Link>
         </li>
       </ul>
