@@ -18,29 +18,12 @@ const Page= ()=>{
       message: '',
      });
 const [formErrors, setFormErrors] = useState<ZodError | null>(null);
-     /*const [name, setName] = useState("");
-     const [email, setEmail] = useState("");
-     const [num, setNum] = useState("");
-     const [message, setMessage] = useState("");
-     const nameValue = (e:ChangeEvent<HTMLInputElement>) => {
-         setName(e.target.value);
-       };
-     const emailValue = (e:ChangeEvent<HTMLInputElement>) => {
-         setEmail(e.target.value);
-       };
-     const numValue = (e:ChangeEvent<HTMLInputElement>) => {
-         setNum(e.target.value);
-       };
-     const messageValue = (e:ChangeEvent<HTMLInputElement>) =>{
-         setMessage(e.target.value);
-       };*/
        const handleChange = (
         e: React.ChangeEvent<HTMLInputElement>,
         field: keyof FormValues
       ) => {
         setInputValues({ ...inputValues, [field]: e.target.value });
-      };
-   
+      }; 
       const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         console.log(inputValues);
